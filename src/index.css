@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+}
+
+body {
+  @apply bg-papel font-sans font-light text-tinta antialiased;
+}
+
+@layer components {
+  .titulo-secao {
+    @apply mb-8 text-center text-xl font-semibold uppercase tracking-[0.3em] text-oliva sm:text-2xl;
+  }
+  .botao {
+    @apply inline-flex items-center justify-center gap-2 bg-oliva px-7 py-3 text-sm font-medium uppercase tracking-[0.2em] text-creme transition hover:bg-oliva-escuro;
+  }
+  .campo {
+    @apply w-full border border-oliva/40 bg-white/70 px-4 py-3 text-base font-light text-tinta outline-none transition focus:border-oliva focus:bg-white;
+  }
+}
