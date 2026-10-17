@@ -4,8 +4,6 @@ export default function Sobre() {
   return (
     <section id="sobre" className="px-5 py-16 sm:py-20">
       <div className="mx-auto max-w-5xl">
-        <h2 className="titulo-secao">Sobre</h2>
-
         <div className="grid items-start gap-10 md:grid-cols-[2fr_3fr]">
           <img
             src={clinic.imagens.retrato}

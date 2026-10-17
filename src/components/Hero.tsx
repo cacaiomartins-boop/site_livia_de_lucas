@@ -1,5 +1,4 @@
-import { clinic, whatsappLink } from "../data/clinic";
-import { IconeWhatsApp } from "./WhatsAppFlutuante";
+import { clinic } from "../data/clinic";
 
 export default function Hero() {
   return (
@@ -13,21 +12,12 @@ export default function Hero() {
           {clinic.nome}
         </h1>
         <p className="mt-5 text-lg tracking-[0.25em]">{clinic.titulo}</p>
-        <p className="mt-1 text-base tracking-[0.2em] text-creme/80">{clinic.orientacao}</p>
 
-        <p className="mx-auto mt-10 max-w-xs text-sm leading-relaxed tracking-[0.12em] text-creme/90">
-          {clinic.atendimento}
+        <p className="mx-auto mt-10 text-sm leading-relaxed tracking-[0.12em] text-creme/90">
+          {clinic.atendimento[0]}
+          <br />
+          {clinic.atendimento[1]}
         </p>
-
-        <a
-          href={whatsappLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-10 inline-flex items-center gap-2 border border-creme px-6 py-3 text-sm uppercase tracking-[0.2em] transition hover:bg-creme hover:text-oliva"
-        >
-          <IconeWhatsApp className="h-5 w-5" />
-          Agendar pelo WhatsApp
-        </a>
       </div>
     </section>
   );

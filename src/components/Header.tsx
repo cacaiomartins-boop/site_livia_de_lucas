@@ -2,7 +2,7 @@ import { useState } from "react";
 import { clinic } from "../data/clinic";
 
 const links = [
-  { href: "#sobre", label: "Sobre" },
+  { href: "#inicio", label: "Home" },
   { href: "#trabalho", label: "Meu trabalho" },
   { href: "#consultorio", label: "Consultório" },
   { href: "#contato", label: "Contato" },

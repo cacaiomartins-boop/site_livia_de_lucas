@@ -4,8 +4,7 @@
 export const clinic = {
   nome: "Lívia de Lucas",
   titulo: "psicanalista",
-  orientacao: "orientação lacaniana",
-  atendimento: "Atendimento de adultos, online e presencial em Pinheiros, SP",
+  atendimento: ["Atendimento de adultos,", "online e presencial em Pinheiros, SP"],
 
   whatsappNumero: "5511998518026",
   whatsappTexto: "Olá, Lívia! Gostaria de saber mais sobre o atendimento.",
@@ -25,7 +24,7 @@ export const clinic = {
     arte: "/img/arte.jpg",
     consultorio: [
       { src: "/img/consultorio-1.jpg", alt: "Consultório com estante de livros e plantas junto à janela" },
-      { src: "/img/consultorio-3.webp", alt: "Consultório com divã vermelho e quadro na parede" },
+      { src: "/img/consultorio-3.webp", alt: "Sala do consultório com poltronas, sofá e quadros na parede" },
       { src: "/img/consultorio-2.jpg", alt: "Janela do consultório com plantas e vista da cidade" },
     ],
   },
@@ -43,8 +42,6 @@ export const clinic = {
     "Mestrado em Psicologia Social, Instituto de Psicologia da USP",
     "Doutorado em andamento em Psicologia Clínica, Instituto de Psicologia da USP",
     "Docente no curso de formação em psicanálise do Centro de Estudos Psicanalíticos (CEP)",
-    "Curso de Psicanálise com Crianças, Instituto Gerar",
-    "Cursos sobre questões raciais e de gênero, Espaço CULT",
   ],
 
   trabalho: [
@@ -52,7 +49,8 @@ export const clinic = {
     "O valor das sessões, o formato do atendimento (online ou presencial) e a frequência são acordados diretamente com o analisante.",
     "Caso você precise alterar o dia/horário, por favor avisar com pelo menos 24h de antecedência. Em caso de atendimento presencial, oriento chegar 10min antes para realizar seu cadastro na portaria do prédio.",
     "Não trabalho com plano de saúde ou recibo para reembolso.",
-    "Caso tenha dúvidas ou queira fazer um agendamento, fique à vontade para me escrever por WhatsApp ou e-mail. Até breve!",
+    "Para brasileiros que vivem no exterior, ofereço a possibilidade de atendimento online (considerando as especificidades de cada fuso horário), e solicito que o pagamento seja realizado em real.",
+    "Caso tenha dúvidas ou queira fazer um agendamento, fique à vontade para me escrever por WhatsApp ou e-mail.\nAté breve!",
   ],
 
   aviso: [

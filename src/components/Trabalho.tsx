@@ -9,7 +9,7 @@ export default function Trabalho() {
         </h2>
         <div className="space-y-4 text-lg leading-relaxed">
           {clinic.trabalho.map((p) => (
-            <p key={p}>{p}</p>
+            <p key={p} className="whitespace-pre-line">{p}</p>
           ))}
         </div>
       </div>
