@@ -4,7 +4,7 @@
 export const clinic = {
   nome: "Lívia de Lucas",
   titulo: "psicanalista",
-  atendimento: ["Atendimento de adultos,", "online e presencial em Pinheiros, SP"],
+  atendimento: ["Atendimento de adultos", "Online e presencial em Pinheiros, SP"],
 
   whatsappNumero: "5511998518026",
   whatsappTexto: "Olá, Lívia! Gostaria de saber mais sobre o atendimento.",
@@ -50,7 +50,7 @@ export const clinic = {
     "Caso você precise alterar o dia/horário, por favor avisar com pelo menos 24h de antecedência. Em caso de atendimento presencial, oriento chegar 10min antes para realizar seu cadastro na portaria do prédio.",
     "Não trabalho com plano de saúde ou recibo para reembolso.",
     "Para brasileiros que vivem no exterior, ofereço a possibilidade de atendimento online (considerando as especificidades de cada fuso horário), e solicito que o pagamento seja realizado em real.",
-    "Caso tenha dúvidas ou queira fazer um agendamento, fique à vontade para me escrever por WhatsApp ou e-mail.\nAté breve!",
+    "Caso tenha dúvidas ou queira fazer um agendamento, fique à vontade para me escrever por WhatsApp ou e-mail.\n\nAté breve!",
   ],
 
   aviso: [
