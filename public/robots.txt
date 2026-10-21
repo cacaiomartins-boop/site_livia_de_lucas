@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.liviadelucaspsicanalista.com.br/sitemap.xml

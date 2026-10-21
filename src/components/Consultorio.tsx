@@ -1,4 +1,4 @@
-import { clinic, mapaEmbed, mapaLink } from "../data/clinic";
+import { clinic, mapaEmbed, mapaLink, srcSet } from "../data/clinic";
 
 export default function Consultorio() {
   return (
@@ -11,7 +11,11 @@ export default function Consultorio() {
             <img
               key={img.src}
               src={img.src}
+              srcSet={srcSet(img.src)}
+              sizes="(min-width: 1024px) 340px, (min-width: 640px) 33vw, 100vw"
               alt={img.alt}
+              width={img.width}
+              height={img.height}
               loading="lazy"
               className="aspect-[4/3] w-full sm:aspect-[3/4] object-cover shadow-md"
             />

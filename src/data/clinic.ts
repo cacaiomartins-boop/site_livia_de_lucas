@@ -20,12 +20,12 @@ export const clinic = {
   lattes: "https://lattes.cnpq.br/3198396250290526",
 
   imagens: {
-    retrato: "/img/livia.jpg",
-    arte: "/img/arte.jpg",
+    retrato: "/img/livia.webp",
+    arte: "/img/arte.webp",
     consultorio: [
-      { src: "/img/consultorio-1.jpg", alt: "Consultório com estante de livros e plantas junto à janela" },
-      { src: "/img/consultorio-3.webp", alt: "Sala do consultório com poltronas, sofá e quadros na parede" },
-      { src: "/img/consultorio-2.jpg", alt: "Janela do consultório com plantas e vista da cidade" },
+      { src: "/img/consultorio-1.webp", width: 800, height: 1066, alt: "Consultório com estante de livros e plantas junto à janela" },
+      { src: "/img/consultorio-3.webp", width: 800, height: 1000, alt: "Sala do consultório com poltronas, sofá e quadros na parede" },
+      { src: "/img/consultorio-2.webp", width: 800, height: 1066, alt: "Janela do consultório com plantas e vista da cidade" },
     ],
   },
 
@@ -58,6 +58,10 @@ export const clinic = {
     "Para emergências, dirija-se a um pronto-socorro.",
   ],
 };
+
+// "/img/foto.webp" -> "/img/foto-400.webp 400w, /img/foto.webp 800w"
+export const srcSet = (src: string) =>
+  `${src.replace(".webp", "-400.webp")} 400w, ${src} 800w`;
 
 export const whatsappLink = `https://wa.me/${clinic.whatsappNumero}?text=${encodeURIComponent(
   clinic.whatsappTexto,

@@ -56,21 +56,22 @@ export default function Contato() {
             Ou envie uma mensagem por aqui:
           </p>
           {/* campo escondido anti-spam */}
-          <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
+          <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" aria-hidden="true" />
 
           <div className="grid gap-4 sm:grid-cols-2">
-            <input className="campo" name="nome" placeholder="Nome" required autoComplete="name" />
+            <input className="campo" name="nome" placeholder="Nome" aria-label="Nome" required autoComplete="name" />
             <input
               className="campo"
               name="email"
               type="email"
               placeholder="E-mail"
+              aria-label="E-mail"
               required
               autoComplete="email"
             />
           </div>
-          <input className="campo" name="telefone" placeholder="Telefone (opcional)" autoComplete="tel" />
-          <textarea className="campo min-h-36" name="mensagem" placeholder="Mensagem" required />
+          <input className="campo" name="telefone" placeholder="Telefone (opcional)" aria-label="Telefone (opcional)" autoComplete="tel" />
+          <textarea className="campo min-h-36" name="mensagem" placeholder="Mensagem" aria-label="Mensagem" required />
 
           <div className="text-center">
             <button type="submit" disabled={estado === "enviando"} className="botao disabled:opacity-60">

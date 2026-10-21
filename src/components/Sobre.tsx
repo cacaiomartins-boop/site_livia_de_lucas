@@ -1,4 +1,4 @@
-import { clinic } from "../data/clinic";
+import { clinic, srcSet } from "../data/clinic";
 
 export default function Sobre() {
   return (
@@ -7,7 +7,12 @@ export default function Sobre() {
         <div className="grid items-start gap-10 md:grid-cols-[2fr_3fr]">
           <img
             src={clinic.imagens.retrato}
+            srcSet={srcSet(clinic.imagens.retrato)}
+            sizes="(min-width: 384px) 384px, 100vw"
             alt={`Retrato de ${clinic.nome}`}
+            width={800}
+            height={1066}
+            decoding="async"
             className="mx-auto w-full max-w-sm object-cover shadow-lg"
           />
 
@@ -20,9 +25,9 @@ export default function Sobre() {
         </div>
 
         <div className="mt-14 bg-creme/60 px-6 py-10 sm:px-12">
-          <h3 className="mb-6 text-center text-base font-semibold uppercase tracking-[0.3em] text-marrom">
+          <h2 className="mb-6 text-center text-base font-semibold uppercase tracking-[0.3em] text-marrom">
             Formação
-          </h3>
+          </h2>
           <ul className="mx-auto max-w-2xl space-y-3 text-base leading-relaxed">
             {clinic.formacao.map((f) => (
               <li key={f} className="flex gap-3">

@@ -28,7 +28,7 @@ export default function Header() {
 
         <button
           type="button"
-          aria-label="Abrir menu"
+          aria-label={aberto ? "Fechar menu" : "Abrir menu"}
           aria-expanded={aberto}
           onClick={() => setAberto(!aberto)}
           className="lg:hidden"
